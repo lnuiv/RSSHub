@@ -1040,6 +1040,19 @@
       }
     ]
   },
+  "1lou.me": {
+    "_name": "BT之家 1LOU站",
+    ".": [
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/routes/multimedia#bt-zhi-jia-1lou-zhan",
+        "source": [
+          "/:path"
+        ],
+        "target": "/1lou/:path"
+      }
+    ]
+  },
   "1point3acres.com": {
     "_name": "一亩三分地",
     "blog": [
@@ -1954,7 +1967,7 @@
     "agirls": [
       {
         "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/new-media##dian-ta-shao-nu",
+        "docs": "https://docs.rsshub.app/routes/new-media#dian-ta-shao-nv",
         "source": [
           "/posts/:category"
         ],
@@ -1962,12 +1975,20 @@
       },
       {
         "title": "精選主題列表",
-        "docs": "https://docs.rsshub.app/routes/new-media##dian-ta-shao-nu",
+        "docs": "https://docs.rsshub.app/routes/new-media#dian-ta-shao-nv",
         "source": [
           "/",
           "/topic"
         ],
         "target": "/agirls/topic_list"
+      },
+      {
+        "title": "精选主题",
+        "docs": "https://docs.rsshub.app/routes/new-media#dian-ta-shao-nv",
+        "source": [
+          "/topic/:topic"
+        ],
+        "target": "/agirls/topic/:topic"
       }
     ]
   },
@@ -8689,6 +8710,19 @@
       }
     ]
   },
+  "ekantipur.com": {
+    "_name": "Ekantipur",
+    ".": [
+      {
+        "title": "Full Article RSS",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#ekantipur-%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0-nepal",
+        "source": [
+          "/:channel"
+        ],
+        "target": "/ekantipur/:channel"
+      }
+    ]
+  },
   "elasticsearch.cn": {
     "_name": "Elastic 中文社区",
     ".": [
@@ -13388,6 +13422,17 @@
       }
     ]
   },
+  "suzhou.gov.cn": {
+    "_name": "苏州市政府",
+    "www": [
+      {
+        "title": "政府新闻",
+        "docs": "https://docs.rsshub.app/routes/government#su-zhou-shi-ren-min-zheng-fu",
+        "source": "/szsrmzf/:uid/nav_list.shtml",
+        "target": "/gov/suzhou/news/:uid"
+      }
+    ]
+  },
   "sz.gov.cn": {
     "_name": "深圳政府在线移动门户",
     "hrss": [
@@ -14410,6 +14455,59 @@
       }
     ]
   },
+  "hket.com": {
+    "_name": "香港经济日报",
+    "china": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
+        "source": [
+          "/:category/*"
+        ],
+        "target": "/hket/:category"
+      }
+    ],
+    "inews": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
+        "source": [
+          "/:category/*"
+        ],
+        "target": "/hket/:category"
+      }
+    ],
+    "topick": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
+        "source": [
+          "/:category/*"
+        ],
+        "target": "/hket/:category"
+      }
+    ],
+    "wealth": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
+        "source": [
+          "/:category/*"
+        ],
+        "target": "/hket/:category"
+      }
+    ],
+    "www": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
+        "source": [
+          "/"
+        ],
+        "target": "/hket"
+      }
+    ]
+  },
   "hkjunkcall.com": {
     "_name": "HKJunkCall資訊中心",
     ".": [
@@ -14577,6 +14675,19 @@
       }
     ]
   },
+  "hoyolab.com": {
+    "_name": "HoYoLAB",
+    ".": [
+      {
+        "title": "活动公告资讯",
+        "docs": "https://docs.rsshub.app/routes/game#hoyolab",
+        "source": [
+          "/",
+          "/circles/:gid/:unknow/official"
+        ]
+      }
+    ]
+  },
   "hpoi.net": {
     "_name": "Hpoi手办维基",
     "www": [
@@ -14701,6 +14812,15 @@
           "/"
         ],
         "target": "/huggingface/daily-papers"
+      },
+      {
+        "title": "中文博客",
+        "docs": "https://docs.rsshub.app/routes/programming#huggingface",
+        "source": [
+          "/blog/zh",
+          "/"
+        ],
+        "target": "/huggingface/blog-zh"
       }
     ]
   },
@@ -17169,6 +17289,19 @@
       }
     ]
   },
+  "jiaoliudao.com": {
+    "_name": "交流岛资源网",
+    ".": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/routes/blog#jiao-liu-dao-zi-yuan-wang",
+        "source": [
+          "/"
+        ],
+        "target": "/jiaoliudao"
+      }
+    ]
+  },
   "jiemian.com": {
     "_name": "界面新闻",
     ".": [
@@ -18684,6 +18817,29 @@
           "/essay"
         ],
         "target": "/kunchengblog/essay"
+      }
+    ]
+  },
+  "kuwaitlocal.com": {
+    "_name": "Kuwait Local",
+    ".": [
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/routes/en/new-media#kuwait-local",
+        "source": [
+          "/news/latest",
+          "/news",
+          "/"
+        ],
+        "target": "/kuwaitlocal"
+      },
+      {
+        "title": "Categorised News",
+        "docs": "https://docs.rsshub.app/routes/en/new-media#kuwait-local",
+        "source": [
+          "/news/categories/:category"
+        ],
+        "target": "/kuwaitlocal/:category"
       }
     ]
   },
@@ -23106,6 +23262,17 @@
       }
     ]
   },
+  "onet.pl": {
+    "_name": "Onet",
+    "wiadomosci": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media#onet",
+        "source": "/",
+        "target": "/onet/news"
+      }
+    ]
+  },
   "oo-software.com": {
     "_name": "O&O Software",
     ".": [
@@ -24023,6 +24190,23 @@
       }
     ]
   },
+  "playstation.com": {
+    "_name": "PlayStation Store",
+    "www": [
+      {
+        "title": "Monthly Games",
+        "docs": "https://docs.rsshub.app/routes/game#playstation-store",
+        "source": [
+          "/en-sg/ps-plus/whats-new"
+        ],
+        "target": "/ps/monthly-games"
+      },
+      {
+        "title": "User trophy",
+        "docs": "https://docs.rsshub.app/routes/game#playstation-store"
+      }
+    ]
+  },
   "pts.org.tw": {
     "_name": "公視新聞網 PNN",
     "news": [
@@ -24187,6 +24371,18 @@
           "/"
         ],
         "target": "/qdu/jwc"
+      }
+    ]
+  },
+  "qianp.com": {
+    "_name": "千篇网",
+    ".": [
+      {
+        "title": "知识库／资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media#qian-pian-wang",
+        "source": [
+          "/*path"
+        ]
       }
     ]
   },
@@ -26480,6 +26676,19 @@
       }
     ]
   },
+  "shuiguopai.com": {
+    "_name": "水果派",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/new-media#shui-guo-pai-shou-ye",
+        "source": [
+          "/"
+        ],
+        "target": "/shuiguopai"
+      }
+    ]
+  },
   "sicau.edu.cn": {
     "_name": "",
     "dky": [
@@ -27899,6 +28108,17 @@
       {
         "title": "Viz of the day",
         "docs": "https://docs.rsshub.app/routes/study#tableau"
+      }
+    ]
+  },
+  "taiwannews.com.tw": {
+    "_name": "台灣英文新聞",
+    ".": [
+      {
+        "title": "最新熱門消息",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#tai-wan-ying-wen-xin-wen",
+        "source": "/:lang/index",
+        "target": "/taiwannews/hot/:lang"
       }
     ]
   },
@@ -29367,6 +29587,14 @@
           "/blog/:language/category/widgets/"
         ],
         "target": "/tradingview/blog/:language/category/widgets"
+      },
+      {
+        "title": "Desktop releases and release notes",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-desktop-releases-and-release-notes",
+        "source": [
+          "/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/"
+        ],
+        "target": "/tradingview/desktop"
       }
     ]
   },
@@ -29496,12 +29724,26 @@
       {
         "title": "xhu - 用户动态",
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
-        "source": "/people/:id"
+        "source": [
+          "/people/:id",
+          "/org/:id"
+        ]
       },
       {
         "title": "xhu - 用户回答",
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
-        "source": "/people/:id/answers"
+        "source": [
+          "/people/:id/answers",
+          "/org/:id/answers"
+        ]
+      },
+      {
+        "title": "xhu - 用户文章",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": [
+          "/people/:id/posts",
+          "/org/:id/posts"
+        ]
       },
       {
         "title": "xhu - 收藏夹",
@@ -29548,6 +29790,15 @@
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
         "source": "/*",
         "target": "/zhihu/daily"
+      }
+    ]
+  },
+  "trendingpapers.com": {
+    "_name": "trendingpapers",
+    ".": [
+      {
+        "title": "Trending Papers on arXiv",
+        "docs": "https://docs.rsshub.app/routes/journal#trending-papers-trending-papers-on-arxiv"
       }
     ]
   },
@@ -33552,35 +33803,6 @@
       }
     ]
   },
-  "playstation.com": {
-    "_name": "PlayStation",
-    "store": [
-      {
-        "title": "游戏列表",
-        "docs": "https://docs.rsshub.app/routes/game#playstation",
-        "source": "/zh-hans-hk/grid/:id/:page",
-        "target": "/ps/list/:id"
-      },
-      {
-        "title": "折扣|价格",
-        "docs": "https://docs.rsshub.app/routes/game#playstation",
-        "source": [
-          "/:lang/product/:gridName"
-        ],
-        "target": "/ps/:lang/product/:gridName"
-      }
-    ],
-    "www": [
-      {
-        "title": "用户奖杯",
-        "docs": "https://docs.rsshub.app/routes/game#playstation"
-      },
-      {
-        "title": "系统更新纪录",
-        "docs": "https://docs.rsshub.app/routes/game#playstation"
-      }
-    ]
-  },
   "monsterhunter.com": {
     "_name": "怪物猎人世界",
     "www": [
@@ -33666,17 +33888,6 @@
         "title": "search",
         "docs": "https://docs.rsshub.app/routes/game#steam",
         "source": "/search/"
-      }
-    ]
-  },
-  "suzhou.gov.cn": {
-    "_name": "苏州市政府",
-    "www": [
-      {
-        "title": "政府新闻",
-        "docs": "https://docs.rsshub.app/routes/government#su-zhou-shi-ren-min-zheng-fu",
-        "source": "/szsrmzf/:uid/nav_list.shtml",
-        "target": "/gov/suzhou/news/:uid"
       }
     ]
   },
